@@ -14,10 +14,10 @@ public class ExoThomas {
 
 
 // Récupérer la date de naissance de l'utilisateur
-        boolean datecorrecte1 = false;
+        boolean validDate1 = false;
         int age1 = 0;
 
-        while (!datecorrecte1) {
+        while (!validDate1) {
 
             System.out.println("Entrez votre date de naissance (jj/mm/aaaa) :");
 
@@ -33,10 +33,10 @@ public class ExoThomas {
             try {
                 LocalDate anniv1 = LocalDate.of(an1, mois1, jour1);
                 age1 = Period.between(anniv1, ajd).getYears();
-                datecorrecte1 = true;
+                validDate1 = true;
             } catch (Exception e) {
                 System.err.println("Attention !!! Veuillez rentrer une date valide au format \"jj/mm/aaaa\"");
-                datecorrecte1 = false;
+                validDate1 = false;
             }
 
         }
@@ -44,10 +44,10 @@ public class ExoThomas {
 
 
 // Récupérer la date de naissance du père
-            boolean datecorrecte2 = false;
+            boolean validDate2 = false;
             int age2 = 0;
 
-            while (!datecorrecte2) {
+            while (!validDate2) {
 
                 System.out.println("Entrez la date de naissance de votre père (jj/mm/aaaa) :");
 
@@ -63,20 +63,20 @@ public class ExoThomas {
                 try {
                     LocalDate anniv2 = LocalDate.of(an2, mois2, jour2);
                     age2 = Period.between(anniv2, ajd).getYears();
-                    datecorrecte2 = true;
+                    validDate2 = true;
                 } catch (Exception e) {
                     System.err.println("Attention !!! Veuillez rentrer une date valide au format \"jj/mm/aaaa\"");
-                    datecorrecte2 = false;
+                    validDate2 = false;
                 }
 
             }
 
 
 // Récupérer la date de naissance de la mère
-                boolean datecorrecte3 = false;
+                boolean validDate3 = false;
                 int age3 = 0;
 
-                while (!datecorrecte3) {
+                while (!validDate3) {
 
                     System.out.println("Entrez la date de naissance de votre mère (jj/mm/aaaa) :");
 
@@ -93,10 +93,10 @@ public class ExoThomas {
                     try {
                         LocalDate anniv3 = LocalDate.of(an3, mois3, jour3);
                         age3 = Period.between(anniv3, ajd).getYears();
-                        datecorrecte3 = true;
+                        validDate3 = true;
                     } catch (Exception e) {
                         System.err.println("Attention !!! Veuillez rentrer une date valide au format \"jj/mm/aaaa\"");
-                        datecorrecte3 = false;
+                        validDate3 = false;
                     }
                 }
 
@@ -121,9 +121,3 @@ public class ExoThomas {
     }
 
 }
-
-
-
-
-
-
