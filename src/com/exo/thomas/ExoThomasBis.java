@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Scanner;
 
-public class ExoThomas {
+public class ExoThomasBis {
 
     public static void main(String[] args) {
 
