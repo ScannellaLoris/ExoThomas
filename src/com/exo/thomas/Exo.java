@@ -4,10 +4,9 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Scanner;
 
-public class ExoThomasBis {
+public class Exo {
 
 	public static void main(String[] args) {
-
 		LocalDate ajd = LocalDate.now();
 		Scanner clavier = new Scanner(System.in);
 
