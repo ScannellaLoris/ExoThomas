@@ -49,7 +49,7 @@ public class ExoThomas {
 
             while (!validDate2) {
 
-                System.out.println("Entrez la date de naissance de votre pÃ¨re (jj/mm/aaaa) :");
+                System.out.println("Entrez la date de naissance de votre père (jj/mm/aaaa) :");
 
                 String date2 = clavier.nextLine();
                 String[] jma2 = date2.split("[/\\-.\\s]");
